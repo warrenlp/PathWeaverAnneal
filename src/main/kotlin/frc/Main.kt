@@ -38,7 +38,7 @@ fun annealPathFiles(autoFilesMap: HashMap<Path, ArrayList<Path>>) {
 
         var prevPos: ArrayList<String>? = null
         entry.value.forEach { it ->
-            println("\t$it")
+            println("INFO\t$it")
             var prevLineSplit: List<String>? = null
             val newLines = arrayListOf<String>()
             val curPathLines = File(it.toString()).readLines()
